@@ -57,7 +57,7 @@ public class BaseClass {
 	}
 	
 	
-	@BeforeMethod(Group="Smoke test")
+	@BeforeMethod(Group="Regression test")
 	public void bm  ()
 	{
 		Generic_utility.File_Utility flib = new Generic_utility.File_Utility();
