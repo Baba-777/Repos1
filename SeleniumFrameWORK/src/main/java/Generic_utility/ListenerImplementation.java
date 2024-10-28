@@ -12,9 +12,9 @@ package Generic_utility;
 		public void onTestFailure(ITestResult result) {
 			TakesScreenshot takeScreenShot = (TakesScreenshot) BaseClass.sdriver;
 			File src = takeScreenShot.getScreenshotAs(OutputType.FILE);
-			File dest = new File("./FailedTestScript.png");
+			File destination = new File("./FailedTestScript.png");
 	try {
-		FileUtils.copyFile(src, dest);
+		FileUtils.copyFile(src, destination);
 	} catch (Exception e) {
 		e.printStackTrace();
 	}
